@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<title>关闭按钮</title>
+</head>
+<body>
+	<div class="container">
+		<div class="menu">
+			<span class="line one"></span>
+			<span class="line two"></span>
+			<span class="line three"></span>
+		</div>
+	</div>
+	<script>
+		let handelMenu=document.querySelector(".container")
+		handelMenu.addEventListener("click",function(){
+			// 使用 toggle 方法可以做到，无 active 类名时添加，反之去除
+			handelMenu.classList.toggle("active")
+		})
+	</script>
+</body>
+</html>

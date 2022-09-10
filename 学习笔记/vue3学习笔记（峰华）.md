@@ -106,7 +106,7 @@ app.mount("#app");
 - 可以直接当做在 `setup()` 函数中编写代码
 - 不用手动 `return`返回变量，可以直接在模板中使用
 - `import` 导入的变量也可以直接在模板中使用
-- 定义 `props` 使用 `defineProps(`) ，定义事件使用 `defineEmits()`，编译器宏，无需导入
+- 定义 `props` 使用 `defineProps()` ，定义事件使用 `defineEmits()`，编译器宏，无需导入
 - 访问 `context`中的属性，可以分别使用 useAttrs() 和 useSlots()
 - `template`模板中的代码保持不变
 

@@ -1,0 +1,27 @@
+例如：记录用户使用状态可以在 beforeDestory和destoryed 声明周期函数中进行记录
+
+
+
+1、安装 fastclick 包，解决移动端点击 300 ms 延迟问题（touchStart与click事件冲突）；
+npm install fastclick --save
+
+2、引入 iconfont 字体图标，在assets 下的styles 文件夹内创建 iconfont 文件夹，将于字体有关的问价放在里面，将与css有关的文件放在 styles 文件下。并在 iconfont.css 中更改 src 路径
+
+
+3、设置 flex:1 后，元素内部设置文字溢出隐藏效果失效。
+https://blog.csdn.net/qq_43624878/article/details/124761537?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166108260416782246495978%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=166108260416782246495978&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~pc_rank_34-1-124761537-null-null.142^v42^pc_rank_34,185^v2^control&utm_term=%E8%AE%BE%E7%BD%AEflex%3A1%E5%90%8E%E5%85%83%E7%B4%A0%E6%96%87%E5%AD%97%E6%BA%A2%E5%87%BA%E6%95%88%E6%9E%9C%E5%A4%B1%E6%95%88&spm=1018.2226.3001.4187
+
+
+4、CSS中使用padding 代替高度实现背景图高度按比例自适应（优化了页面的抖动问题）
+
+5、实现城市选择页及字母滚动条联动，并进行节流优化
+
+6、部分组件使用了 <keep> 组价进行缓存，如果需要更新组件的话，则需要使用其 active 生命周期函数
+
+7、解决overflow:hidden与定位一起使用子元素定位后元素被裁剪，隐藏不见问题
+
+8、添加全局的 window.addEventListener（scroll,handel)事件后需要解绑
+
+9、使用递归组件实现一级、二级目录的效果（在组件内部使用自己，即声明组件时，name属性的
+
+10、解决了300ms延迟问题
